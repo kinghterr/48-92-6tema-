@@ -1,0 +1,90 @@
+<!-- Задание 1: Ссылки с разными состояниями -->
+<a href="#">Ссылка 1</a>
+<a href="#">Ссылка 2</a>
+<a href="#">Ссылка 3</a>
+<style>
+a:link {
+	color: blue;
+	text-decoration: none;
+}
+a:visited {
+	color: green;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+a:active {
+	color: black;
+	text-decoration: none;
+}
+</style>
+
+<!-- Задание 2: Все ссылки голубые и неподчеркнутые, :hover - красные и подчеркнутые -->
+<a href="#">Ссылка A</a>
+<a href="#">Ссылка B</a>
+<style>
+a {
+	color: blue;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+</style>
+
+<!-- Задание 3: Ссылки внутри блока #test -->
+<div id="test">
+	<a href="#">Ссылка 1</a>
+	<a href="#">Ссылка 2</a>
+</div>
+<style>
+#test a {
+	color: red;
+}
+#test a:hover {
+	text-decoration: none;
+}
+</style>
+
+<!-- Задание 4: Ссылки с классом zzz -->
+<a href="#" class="zzz">Ссылка 1</a>
+<a href="#" class="zzz">Ссылка 2</a>
+<style>
+a.zzz {
+	color: red;
+}
+a.zzz:hover {
+	text-decoration: none;
+}
+</style>
+
+<!-- Задание 5: Ссылки с классом zzz внутри блока #block -->
+<div id="block">
+	<a href="#" class="zzz">Ссылка A</a>
+	<a href="#" class="zzz">Ссылка B</a>
+</div>
+<style>
+#block a.zzz {
+	color: red;
+}
+#block a.zzz:hover {
+	text-decoration: none;
+}
+</style>
+
+<!-- Задание 6: Ссылки с классом zzz внутри блока .block -->
+<div class="block">
+	<a href="#" class="zzz">Ссылка X</a>
+	<a href="#" class="zzz">Ссылка Y</a>
+</div>
+<style>
+.block a.zzz {
+	color: red;
+}
+.block a.zzz:hover {
+	text-decoration: none;
+}
+</style>
